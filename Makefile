@@ -1,5 +1,5 @@
-APP      = StockBar
-BINARY   = stockbar
+APP      = GoldBar
+BINARY   = goldbar
 SRC      = main.swift
 ARCH     = x86_64
 SDK      = macosx
@@ -31,7 +31,7 @@ app: build
 	@cp $(BINARY) $(APP).app/Contents/MacOS/$(BINARY)
 	@/usr/libexec/PlistBuddy -c "Add :CFBundleName          string $(APP)"          $(APP).app/Contents/Info.plist
 	@/usr/libexec/PlistBuddy -c "Add :CFBundleExecutable    string $(BINARY)"        $(APP).app/Contents/Info.plist
-	@/usr/libexec/PlistBuddy -c "Add :CFBundleIdentifier    string com.ny.stockbar"  $(APP).app/Contents/Info.plist
+	@/usr/libexec/PlistBuddy -c "Add :CFBundleIdentifier    string com.ny.goldbar"  $(APP).app/Contents/Info.plist
 	@/usr/libexec/PlistBuddy -c "Add :CFBundleVersion       string 1.0"              $(APP).app/Contents/Info.plist
 	@/usr/libexec/PlistBuddy -c "Add :LSUIElement            bool   true"            $(APP).app/Contents/Info.plist
 	@/usr/libexec/PlistBuddy -c "Add :NSHighResolutionCapable bool  true"            $(APP).app/Contents/Info.plist
