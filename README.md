@@ -1,4 +1,4 @@
-# StockBar
+# Gold Bar
 
 macOS 状态栏现货黄金价格显示工具，每 5 秒从 Swissquote 获取 XAU/USD 报价。
 
