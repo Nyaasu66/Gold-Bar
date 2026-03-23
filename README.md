@@ -13,7 +13,7 @@ make run
 
 # 打包为 .app（可拖入启动台/Applications）
 make app
-open StockBar.app
+open GoldBar.app
 
 # 安装到系统路径
 make install
